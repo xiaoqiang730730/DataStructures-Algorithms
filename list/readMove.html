@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>readmove</title>
+</head>
+<body>
+    <div>moveaaa</div>
+    <div>movebbb</div>
+    <div>moveccc</div>
+    <div>moveddd</div>
+    <div>moveeee</div>
+    <div>movefff</div>
+    <div>moveggg</div>
+    <div>movehhh</div>
+    <div>moveiii</div>
+    <div>movekkk</div>
+    <script type="text/javascript" src='list.js'></script>
+    <script type="text/javascript">
+        var divs = document.getElementsByTagName('div');
+        var moveList = new List();
+        for (var i = 0; i < divs.length; i++) {
+            moveList.append(divs[i].innerText);
+        }
+        console.dir(moveList.toString());
+
+        // check-in 
+        moveList.checkin = [];
+        moveList.checkout = [];
+        moveList.prototype.checkIn = function(element){
+            var index = this.find(element);
+            if(index > -1){
+
+            }else{
+                
+            }
+        };
+        // check-out
+    </script>
+</body>
+</html>
